@@ -1,0 +1,11 @@
+[package]
+name = "userfaultfd"
+version = "0.1.0"
+authors = ["Jacob Hughes <jhughes@distanthills.org>"]
+build = "build.rs"
+
+[dependencies]
+sc = "0.2"
+
+[build-dependencies]
+bindgen = "0.26"
