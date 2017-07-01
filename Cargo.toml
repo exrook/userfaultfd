@@ -6,6 +6,15 @@ build = "build.rs"
 
 [dependencies]
 sc = "0.2"
+bitflags = "0.9"
+mio = { version = "0.6", optional = true }
 
 [build-dependencies]
 bindgen = "0.26"
+
+[dev-dependencies]
+memmap = "0.5"
+
+[[example]]
+name = "example"
+required-features = ["mio"]
